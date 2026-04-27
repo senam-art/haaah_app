@@ -1,0 +1,98 @@
+name: haaah_app
+description: "HAAAH Sports - Decentralized Sports Matchmaking App"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  http: ^1.6.0
+  
+  # Maps & Location
+  geolocator: ^14.0.2
+  google_maps_flutter: ^2.17.0
+  
+  # Camera / Scanner
+  mobile_scanner: ^7.2.0
+  image_picker: ^1.1.2
+  
+  # Local Storage
+  sqflite: ^2.4.2
+  path_provider: ^2.1.5
+  
+  # Web Views
+  webview_flutter: ^4.13.1
+  
+  # Backend
+  supabase_flutter: ^2.12.4
+  
+  # QR Code Generation (for tickets)
+  qr_flutter: ^4.1.0
+  
+  # Connectivity / Offline
+  connectivity_plus: ^6.1.4
+  
+  # Calendar
+  device_calendar: ^4.3.3
+  
+  # Notifications
+  flutter_local_notifications: ^18.0.1
+  
+  # UI Enhancements
+  cached_network_image: ^3.4.1
+  shimmer: ^3.0.0
+  intl: ^0.20.2
+  haptic_feedback: ^0.6.4+3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter_18pt-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Inter_18pt-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Inter_18pt-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Inter_18pt-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter_18pt-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter_18pt-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter_18pt-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Inter_18pt-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Inter_18pt-Black.ttf
+          weight: 900
+        - asset: assets/fonts/Inter_18pt-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Inter_18pt-BoldItalic.ttf
+          weight: 700
+          style: italic
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  min_sdk_android: 21 
+  adaptive_icon_background: "#0A0A0A" 
+  adaptive_icon_foreground: "assets/images/app_icon.png"
